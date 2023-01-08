@@ -3,8 +3,8 @@ const outputRef = document.querySelector(".color");
 const bodyRef = document.querySelector("body");
 
 btnRef.addEventListener("click", (event) => {
-  const zm = getRandomHexColor();
-  bodyRef.style.backgroundColor = outputRef.textContent = zm;
+  const randomColor = getRandomHexColor();
+  bodyRef.style.backgroundColor = outputRef.textContent = randomColor;
 });
 
 function getRandomHexColor() {
